@@ -1,3 +1,8 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
 :root {
   --primary-color: #5bbfb7;
   --secondary-color: #4a9b94;
@@ -486,6 +491,7 @@ body {
   padding: 80px 0;
 
   .totc-card {
+      width: 100%;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
