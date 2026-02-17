@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('currentUser', usernameInput.value);
             
             alert('Registration successful!');
-            window.location.href = 'landing.html';
+            window.location.href = 'index.html';
         }
     });
     
