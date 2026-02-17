@@ -4,11 +4,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const usernameInput = document.querySelector('input[type="text"]');
     const passwordInput = document.querySelector('#password');
 
+    // تنظيف الـ localStorage من البيانات القديمة/الفاسدة
+    (function cleanStorage() {
+        const users   = JSON.parse(localStorage.getItem('users') || '[]');
+        const cleaned = users.filter(u => u && u.username && u.email && u.password);
+        localStorage.setItem('users', JSON.stringify(cleaned));
+    })();
+
     /* -------- helpers -------- */
     function createErrorElement(message) {
         const error = document.createElement('span');
         error.className = 'error-message';
-        error.style.cssText = 'color:red;font-size:12px;margin-top:5px;display:block;';
+        error.style.color = 'red';
+        error.style.fontSize = '12px';
+        error.style.marginTop = '5px';
+        error.style.display = 'block';
         error.textContent = message;
         return error;
     }
@@ -20,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showError(input, message) {
         input.style.borderColor = 'red';
-        // الـ password input جوه .password-field فنضيف الخطأ بعد الـ .password-field مش جوه الـ input
         const container = input.closest('.password-field') || input.parentElement;
         container.appendChild(createErrorElement(message));
         input.addEventListener('input', function () {
@@ -50,17 +59,26 @@ document.addEventListener('DOMContentLoaded', function () {
         return null;
     }
 
+    // ✅ الدالة المصلحة - بتتجاهل أي user فاسد
     function isUserExists(username, email) {
-        const users = JSON.parse(localStorage.getItem('users')) || [];
-        return users.some(u =>
-            u.username.toLowerCase() === username.toLowerCase() ||
-            u.email.toLowerCase()    === email.toLowerCase()
-        );
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        return users.some(function(u) {
+            if (!u || !u.username || !u.email) return false;
+            return (
+                u.username.toLowerCase() === username.toLowerCase() ||
+                u.email.toLowerCase()    === email.toLowerCase()
+            );
+        });
     }
 
     function saveUser(email, username, password) {
-        const users = JSON.parse(localStorage.getItem('users')) || [];
-        users.push({ email, username, password, registeredAt: new Date().toISOString() });
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        users.push({
+            email:        email,
+            username:     username,
+            password:     password,
+            registeredAt: new Date().toISOString()
+        });
         localStorage.setItem('users', JSON.stringify(users));
     }
 
@@ -71,8 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let isValid = true;
 
-        const emailError    = validateEmail(emailInput.value);
-        if (emailError)    { showError(emailInput,    emailError);    isValid = false; }
+        const emailError = validateEmail(emailInput.value);
+        if (emailError) { showError(emailInput, emailError); isValid = false; }
 
         const usernameError = validateUsername(usernameInput.value);
         if (usernameError) { showError(usernameInput, usernameError); isValid = false; }
