@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event - Multi Step</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/createevent.css">
+</head>
+<body>
+    <div class="event-creation-page">
+        <div class="row g-0">
+            <div class="col-lg-3 sidebar">
+                <div class="sidebar-content">
+                    <button class="btn-back">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <h3 class="sidebar-title">Change Simplification</h3>
+
+                    <div class="lessons-list">
+                        <div class="lesson-item active">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                        <div class="lesson-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                        <div class="lesson-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                        <div class="lesson-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                    </div>
+
+                    <h3 class="sidebar-title mt-4">PRACTICE QUIZ</h3>
+                    <div class="lessons-list">
+                        <div class="lesson-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                        <div class="lesson-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                        <div class="lesson-item">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Lesson 01: Introduction about XD</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 main-content">
+                <div class="content-header">
+                    <div>
+                        <h2 class="header-title">Learn about Adobe XD & Prototyping</h2>
+                        <p class="header-subtitle">Introduction about XD</p>
+                    </div>
+                    <div class="header-time">
+                        <i class="far fa-clock"></i>
+                        <span>1 hour</span>
+                    </div>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-content active" id="step1">
+                        <h3 class="step-title">Create new event</h3>
+                        <p class="step-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod lorem.
+                        </p>
+
+                        <form id="eventForm">
+                            <div class="mb-3">
+                                <label class="form-label">Event Name</label>
+                                <input type="text" class="form-control" placeholder="Adobe XD Audo - Animate - Your Guide to Creating" required>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Start date / Time</label>
+                                    <input type="text" class="form-control" placeholder="September 24, 2017 07:34 am">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">End Date / Time</label>
+                                    <input type="text" class="form-control" placeholder="September 24, 2017 01:34 am">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Location</label>
+                                <input type="text" class="form-control" placeholder="2118 Thornridge Cir. Syracuse, Connecticut 35624">
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Notification</label>
+                                    <select class="form-select">
+                                        <option>30 mins</option>
+                                        <option>1 hour</option>
+                                        <option>2 hours</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="jessica.hanson@example.com">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Event Description</label>
+                                <textarea class="form-control" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectutur"></textarea>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="button" class="btn-save-now" onclick="nextStep(2)">Save Now</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="step-content" id="step2">
+                        <h3 class="step-title">Share and refer</h3>
+                        <p class="step-description">
+                            Lorem ipsum dolor sit amet, consectetur api piscing elit, sed do eiusmodadipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+
+                        <div class="calendar-section">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="calendar-container">
+                                        <div class="calendar-header">
+                                            <button class="btn-calendar-nav" onclick="changeMonth(-1)">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </button>
+                                            <span class="calendar-month">September 2021</span>
+                                            <button class="btn-calendar-nav" onclick="changeMonth(1)">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="calendar-grid">
+                                            <div class="calendar-day">1</div>
+                                            <div class="calendar-day">2</div>
+                                            <div class="calendar-day">3</div>
+                                            <div class="calendar-day">4</div>
+                                            <div class="calendar-day">5</div>
+                                            <div class="calendar-day">6</div>
+                                            <div class="calendar-day">7</div>
+                                            <div class="calendar-day">8</div>
+                                            <div class="calendar-day">9</div>
+                                            <div class="calendar-day">10</div>
+                                            <div class="calendar-day">11</div>
+                                            <div class="calendar-day active">12</div>
+                                            <div class="calendar-day">13</div>
+                                            <div class="calendar-day">14</div>
+                                            <div class="calendar-day">15</div>
+                                            <div class="calendar-day">16</div>
+                                            <div class="calendar-day">17</div>
+                                            <div class="calendar-day">18</div>
+                                            <div class="calendar-day">19</div>
+                                            <div class="calendar-day">20</div>
+                                            <div class="calendar-day">21</div>
+                                            <div class="calendar-day">22</div>
+                                            <div class="calendar-day">23</div>
+                                            <div class="calendar-day">24</div>
+                                            <div class="calendar-day">25</div>
+                                            <div class="calendar-day">26</div>
+                                            <div class="calendar-day">27</div>
+                                            <div class="calendar-day">28</div>
+                                            <div class="calendar-day">29</div>
+                                            <div class="calendar-day">30</div>
+                                            <div class="calendar-day">31</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="events-schedule">
+                                        <h4 class="schedule-date">Sep 12, Monday</h4>
+                                        <div class="timeline">
+                                            <div class="time-slot">2 PM</div>
+                                            <div class="time-slot event-slot">
+                                                <span>3 PM</span>
+                                                <div class="event-block">Adobe XD Live Class</div>
+                                            </div>
+                                            <div class="time-slot">4 PM</div>
+                                            <div class="time-slot">5 PM</div>
+                                            <div class="time-slot">6 PM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-end mt-4">
+                            <button type="button" class="btn-back-step me-2" onclick="prevStep(1)">Back</button>
+                            <button type="button" class="btn-save-now" onclick="nextStep(3)">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="step-content" id="step3">
+                        <h3 class="step-title">Share and Refer</h3>
+                        <p class="step-description">
+                            Lorem ipsum dolor sit amet, consectetur api piscing elit, sed do eiusmodadipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+
+                        <div class="share-cards">
+                            <div class="share-card">
+                                <div class="share-header">
+                                    <h4 class="share-title">06 Super Coins on the way</h4>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-link"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <p class="share-description">Lorem ipsum dolor sit amet, consectetur est</p>
+                                <p class="share-text">
+                                    Lorem ipsum dolor sit amet, consectetur api piscing elit, sed do eiusmodadipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                                </p>
+                            </div>
+
+                            <div class="share-card">
+                                <div class="share-header">
+                                    <h4 class="share-title">06 Super Coins on the way</h4>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-link"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <p class="share-description">Lorem ipsum dolor sit amet, consectetur est</p>
+                                <p class="share-text">
+                                    Lorem ipsum dolor sit amet, consectetur api piscing elit, sed do eiusmodadipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                                </p>
+                            </div>
+
+                            <div class="share-card">
+                                <div class="share-header">
+                                    <h4 class="share-title">06 Super Coins on the way</h4>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-link"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <p class="share-description">Lorem ipsum dolor sit amet, consectetur est</p>
+                                <p class="share-text">
+                                    Lorem ipsum dolor sit amet, consectetur api piscing elit, sed do eiusmodadipiscing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-end mt-4">
+                            <button type="button" class="btn-back-step me-2" onclick="prevStep(2)">Back</button>
+                            <button type="button" class="btn-save-now" onclick="completeEvent()">Complete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

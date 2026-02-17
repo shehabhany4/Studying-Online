@@ -1,0 +1,752 @@
+
+.instructor-profile-section {
+    background: #F9FAFB;
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .profile-card {
+            position: relative;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+            .profile-background {
+                position: relative;
+                height: 15em;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .profile-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(128, 128, 128, 0.3);
+                }
+            }
+
+            .profile-content {
+                position: relative;
+                padding: 0 40px 40px;
+
+                .profile-image-wrapper {
+                    position: absolute;
+                    top: -80px;
+                    left: 40px;
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 8px solid white;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+                    .profile-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .profile-info {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 40px;
+                    padding-top: 100px;
+
+                    .info-left {
+                        flex: 1;
+
+                        .profile-name {
+                            font-size: 32px;
+                            font-weight: 700;
+                            color: #1F2937;
+                            margin-bottom: 8px;
+                        }
+
+                        .profile-title {
+                            font-size: 16px;
+                            color: #6B7280;
+                            margin-bottom: 20px;
+                        }
+
+                        .profile-description {
+                            font-size: 14px;
+                            color: #6B7280;
+                            line-height: 1.8;
+                            margin-bottom: 25px;
+                        }
+
+                        .profile-stats {
+                            display: flex;
+                            gap: 30px;
+                            flex-wrap: wrap;
+
+                            .stat-item {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                font-size: 14px;
+                                color: #6B7280;
+
+                                i {
+                                    color: #49BBBD;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .info-right {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        gap: 20px;
+
+                        .btn-enroll {
+                            background: #49BBBD;
+                            color: white;
+                            border: none;
+                            padding: 15px 40px;
+                            border-radius: 12px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 4px 15px rgba(73, 187, 189, 0.3);
+
+                            &:hover {
+                                background: #3BA5A7;
+                                transform: translateY(-3px);
+                                box-shadow: 0 8px 25px rgba(73, 187, 189, 0.4);
+                            }
+
+                            &:active {
+                                transform: translateY(-1px);
+                            }
+                        }
+
+                        .social-links-profile {
+                            display: flex;
+                            gap: 12px;
+
+                            .social-icon-profile {
+                                width: 42px;
+                                height: 42px;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-decoration: none;
+                                transition: all 0.3s ease;
+
+                                &.twitter {
+                                    background: #49BBBD;
+                                    color: white;
+
+                                    &:hover {
+                                        background: #3BA5A7;
+                                        transform: translateY(-3px);
+                                        box-shadow: 0 6px 20px rgba(73, 187, 189, 0.4);
+                                    }
+                                }
+
+                                &.youtube {
+                                    background: #49BBBD;
+                                    color: white;
+
+                                    &:hover {
+                                        background: #3BA5A7;
+                                        transform: translateY(-3px);
+                                        box-shadow: 0 6px 20px rgba(73, 187, 189, 0.4);
+                                    }
+                                }
+
+                                &.instagram {
+                                    background: #49BBBD;
+                                    color: white;
+
+                                    &:hover {
+                                        background: #3BA5A7;
+                                        transform: translateY(-3px);
+                                        box-shadow: 0 6px 20px rgba(73, 187, 189, 0.4);
+                                    }
+                                }
+
+                                i {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .instructor-profile-section {
+        padding: 60px 0;
+
+        .container {
+            padding: 0 1.5rem;
+
+            .profile-card {
+                .profile-content {
+                    padding: 0 30px 30px;
+
+                    .profile-image-wrapper {
+                        left: 30px;
+                        width: 140px;
+                        height: 140px;
+                        top: -70px;
+                    }
+
+                    .profile-info {
+                        padding-top: 90px;
+                        flex-direction: column;
+
+                        .info-left {
+                            .profile-name {
+                                font-size: 28px;
+                            }
+
+                            .profile-title {
+                                font-size: 15px;
+                            }
+
+                            .profile-description {
+                                font-size: 13px;
+                            }
+
+                            .profile-stats {
+                                gap: 20px;
+
+                                .stat-item {
+                                    font-size: 13px;
+
+                                    i {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .info-right {
+                            flex-direction: row;
+                            align-items: center;
+                            width: 100%;
+                            justify-content: space-between;
+
+                            .btn-enroll {
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .instructor-profile-section {
+        padding: 50px 0;
+
+        .container {
+            padding: 0 1rem;
+
+            .profile-card {
+                border-radius: 20px;
+
+                .profile-background {
+                    height: 100px;
+                }
+
+                .profile-content {
+                    padding: 0 20px 25px;
+
+                    .profile-image-wrapper {
+                        left: 20px;
+                        width: 120px;
+                        height: 120px;
+                        top: -60px;
+                        border-width: 6px;
+                    }
+
+                    .profile-info {
+                        padding-top: 75px;
+
+                        .info-left {
+                            .profile-name {
+                                font-size: 24px;
+                            }
+
+                            .profile-stats {
+                                flex-direction: column;
+                                gap: 12px;
+                            }
+                        }
+
+                        .info-right {
+                            flex-direction: column;
+                            align-items: stretch;
+
+                            .btn-enroll {
+                                width: 100%;
+                            }
+
+                            .social-links-profile {
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .instructor-profile-section {
+        padding: 40px 0;
+
+        .container {
+            .profile-card {
+                .profile-content {
+                    .profile-info {
+                        .info-left {
+                            .profile-name {
+                                font-size: 22px;
+                            }
+
+                            .profile-title {
+                                font-size: 14px;
+                            }
+
+                            .profile-description {
+                                font-size: 13px;
+                            }
+                        }
+
+                        .info-right {
+                            .btn-enroll {
+                                padding: 13px 30px;
+                                font-size: 15px;
+                            }
+
+                            .social-links-profile {
+                                .social-icon-profile {
+                                    width: 38px;
+                                    height: 38px;
+
+                                    i {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.navigation-tabs-section {
+    padding: 30px 0;
+    background: #ffffff;
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .tabs-wrapper {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .tab-button {
+                background: #E5E7EB;
+                color: #6B7280;
+                border: none;
+                padding: 14px 32px;
+                border-radius: 12px;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                white-space: nowrap;
+
+                &:hover {
+                    background: #D1D5DB;
+                    color: #1F2937;
+                }
+
+                &.active {
+                    background: #49BBBD;
+                    color: white;
+                    box-shadow: 0 4px 15px rgba(73, 187, 189, 0.3);
+
+                    &:hover {
+                        background: #3BA5A7;
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-tabs-section {
+        padding: 25px 0;
+
+        .container {
+            padding: 0 1rem;
+
+            .tabs-wrapper {
+                gap: 10px;
+
+                .tab-button {
+                    padding: 12px 24px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .navigation-tabs-section {
+        padding: 20px 0;
+
+        .container {
+            .tabs-wrapper {
+                gap: 8px;
+
+                .tab-button {
+                    flex: 1 1 calc(50% - 4px);
+                    min-width: calc(50% - 4px);
+                    padding: 11px 20px;
+                    font-size: 13px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.literature-course-section {
+    padding: 80px 0;
+    background: #F9FAFB;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1F2937;
+            margin-bottom: 40px;
+        }
+
+        .carousel {
+            margin-bottom: 40px;
+
+            .carousel-inner {
+                .carousel-item {
+                    .row {
+                        .book-card {
+                            background: white;
+                            border-radius: 15px;
+                            padding: 20px;
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+                            transition: all 0.4s ease;
+                            cursor: pointer;
+                            height: 100%;
+
+                            &:hover {
+                                transform: translateY(-10px);
+                                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+                                .book-image {
+                                    img {
+                                        transform: scale(1.05);
+                                    }
+                                }
+                            }
+
+                            .book-image {
+                                width: 100%;
+                                height: 280px;
+                                border-radius: 12px;
+                                overflow: hidden;
+                                margin-bottom: 20px;
+                                background: #E5E7EB;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    transition: transform 0.4s ease;
+                                }
+                            }
+
+                            .book-info {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .book-title {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: #1F2937;
+                                    margin: 0;
+                                }
+
+                                .book-price {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    color: #49BBBD;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Custom Pagination */
+            .carousel-pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin-top: 30px;
+
+                .pagination-arrow {
+                    position: static;
+                    width: 45px;
+                    height: 45px;
+                    border: none;
+                    border-radius: 10px;
+                    background: #D1F3F4;
+                    color: #49BBBD;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 1;
+                    transform: none;
+
+                    &:hover {
+                        background: #49BBBD;
+                        color: white;
+                        transform: translateY(-2px);
+                    }
+
+                    span {
+                        display: none;
+                    }
+
+                    i {
+                        font-size: 14px;
+                        pointer-events: none;
+                    }
+                }
+
+                .carousel-indicators-custom {
+                    position: static;
+                    display: flex;
+                    gap: 10px;
+                    margin: 0;
+
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        border-radius: 8px;
+                        background: #E5E7EB;
+                        color: #6B7280;
+                        font-size: 15px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        text-indent: 0;
+                        opacity: 1;
+
+                        &:hover {
+                            background: #D1D5DB;
+                            color: #1F2937;
+                        }
+
+                        &.active {
+                            background: #49BBBD;
+                            color: white;
+                            box-shadow: 0 4px 12px rgba(73, 187, 189, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .literature-course-section {
+        padding: 60px 0;
+
+        .container {
+            padding: 0 1.5rem;
+
+            .section-title {
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .row {
+                            .book-card {
+                                padding: 18px;
+
+                                .book-image {
+                                    height: 250px;
+                                }
+
+                                .book-info {
+                                    .book-title {
+                                        font-size: 15px;
+                                    }
+
+                                    .book-price {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .carousel-pagination {
+                    .pagination-arrow {
+                        width: 42px;
+                        height: 42px;
+                    }
+
+                    .carousel-indicators-custom {
+                        button {
+                            width: 38px;
+                            height: 38px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .literature-course-section {
+        padding: 50px 0;
+
+        .container {
+            padding: 0 1rem;
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .row {
+                            .book-card {
+                                padding: 15px;
+
+                                .book-image {
+                                    height: 220px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .literature-course-section {
+        padding: 40px 0;
+
+        .container {
+            .section-title {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .row {
+                            .book-card {
+                                .book-image {
+                                    height: 250px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .carousel-pagination {
+                    gap: 10px;
+
+                    .pagination-arrow {
+                        width: 38px;
+                        height: 38px;
+
+                        i {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .carousel-indicators-custom {
+                        gap: 8px;
+
+                        button {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

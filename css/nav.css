@@ -1,0 +1,296 @@
+
+.navbar-section {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+
+    .container {
+        .navbar-brand {
+            .logo-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 40px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .mobile-toggle {
+            font-size: 24px;
+            color: #1F2937;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: none;
+
+            &:hover {
+                background: #F3F4F6;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            i {
+                pointer-events: none;
+            }
+        }
+
+        .nav-links {
+            gap: 2.5rem;
+            
+
+            .nav-item {
+                .nav-link {
+                    color: #6B7280;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                    position: relative;
+                    transition: all 0.3s ease;
+
+                    &.active {
+                        color: #1F2937;
+                        font-weight: 600;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            right: 0;
+                            height: 3px;
+                            background: linear-gradient(90deg, #49BBBD 0%, #3BA5A7 100%);
+                            border-radius: 2px;
+                        }
+                    }
+
+                    &:hover {
+                        color: #49BBBD;
+                    }
+                }
+            }
+        }
+
+        .navbar-profile {
+            .dropdown {
+                .profile-dropdown {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 8px 16px;
+                    border-radius: 25px;
+                    background: #F9FAFB;
+                    border: none;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: #F3F4F6;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                    }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+
+                    .profile-img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid #49BBBD;
+                    }
+
+                    .profile-name {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #1F2937;
+                    }
+
+                    .dropdown-icon {
+                        font-size: 12px;
+                        color: #6B7280;
+                        transition: transform 0.3s ease;
+                    }
+
+                    &.show .dropdown-icon,
+                    &[aria-expanded="true"] .dropdown-icon {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .dropdown-menu {
+                    border-radius: 12px;
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+                    border: none;
+                    padding: 8px;
+                    min-width: 220px;
+                    margin-top: 10px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -6px;
+                        right: 20px;
+                        width: 12px;
+                        height: 12px;
+                        background: #ffffff;
+                        transform: rotate(45deg);
+                        border-radius: 2px;
+                    }
+
+                    .dropdown-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        padding: 12px 16px;
+                        border-radius: 8px;
+                        transition: all 0.2s ease;
+                        color: #1F2937;
+
+                        i {
+                            font-size: 16px;
+                            color: #6B7280;
+                            width: 20px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+
+                        &:hover {
+                            background: #F9FAFB;
+                            color: #49BBBD;
+
+                            i {
+                                color: #49BBBD;
+                            }
+                        }
+
+                        &.logout {
+                            color: #EF4444;
+
+                            i {
+                                color: #EF4444;
+                            }
+
+                            &:hover {
+                                background: #FEF2F2;
+                                color: #DC2626;
+
+                                i {
+                                    color: #DC2626;
+                                }
+                            }
+                        }
+                    }
+
+                    .dropdown-divider {
+                        margin: 8px 0;
+                        border-color: #E5E7EB;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar-section {
+        .container {
+            .navbar-collapse {
+                margin-top: 1rem;
+            }
+
+            .nav-links {
+                gap: 0;
+
+                .nav-item {
+                    border-bottom: 1px solid #E5E7EB;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    .nav-link {
+                        padding: 1rem 0;
+
+                        &.active::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .navbar-profile {
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid #E5E7EB;
+
+                .dropdown {
+                    .profile-dropdown {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-section {
+        .container {
+            .navbar-brand {
+                .logo-icon {
+                    width: 50px;
+                    height: 35px;
+                }
+            }
+
+            .navbar-profile {
+                .dropdown {
+                    .profile-dropdown {
+                        padding: 6px 12px;
+
+                        .profile-img {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .profile-name {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

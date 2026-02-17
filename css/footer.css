@@ -1,0 +1,216 @@
+.footer {
+  background: linear-gradient(135deg, #2d3e50 0%, #3b4f63 100%);
+  color: #ffffff;
+  padding: 60px 0 30px;
+
+  .footer-top {
+    margin-bottom: 40px;
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+
+      .logo-icon {
+        font-size: 28px;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 1em;
+        border-left: 2px solid gray;
+
+        .virtual {
+          font-size: 16px;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 1.2;
+        }
+
+        .zoom {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8);
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+
+  .newsletter-section {
+    margin-bottom: 35px;
+
+    .newsletter-title {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 20px;
+    }
+
+    .newsletter-form {
+      max-width: 500px;
+      margin: 0 auto;
+
+      .input-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .form-control {
+          background-color: transparent;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          border-radius: 25px;
+          padding: 12px 25px;
+          color: #ffffff;
+          font-size: 14px;
+          flex: 1;
+          max-width: 300px;
+
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+          }
+
+          &:focus {
+            background-color: transparent;
+            border-color: #00c5c4;
+            box-shadow: 0 0 0 0.2rem rgba(0, 197, 196, 0.25);
+            color: #ffffff;
+          }
+        }
+
+        .btn-subscribe {
+          background-color: #00c5c4;
+          color: #ffffff;
+          border: none;
+          border-radius: 25px;
+          padding: 12px 35px;
+          font-size: 14px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #00a5a4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 197, 196, 0.3);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+
+    .footer-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      padding: 0 10px;
+
+      &:hover {
+        color: #00c5c4;
+      }
+    }
+
+    .separator {
+      color: rgba(255, 255, 255, 0.4);
+      margin: 0 5px;
+    }
+  }
+
+  .footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+
+    p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0 25px;
+
+    .footer-logo {
+      flex-direction: column;
+      gap: 15px;
+
+      .logo-text {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .newsletter-form .input-group {
+      flex-direction: column;
+      align-items: center;
+
+      .form-control {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .btn-subscribe {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    .footer-links {
+      padding: 15px 0;
+
+      .footer-link {
+        display: inline-block;
+        margin: 5px 0;
+        padding: 0 8px;
+      }
+
+      .separator {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    .logo-icon {
+      font-size: 24px;
+      padding: 8px 16px;
+    }
+
+    .virtual {
+      font-size: 14px;
+    }
+
+    .zoom {
+      font-size: 12px;
+    }
+
+    .newsletter-title {
+      font-size: 15px;
+    }
+
+    .footer-link {
+      font-size: 13px;
+      display: block;
+      margin: 8px 0;
+      padding: 0;
+    }
+
+    .footer-copyright p {
+      font-size: 12px;
+    }
+  }
+}

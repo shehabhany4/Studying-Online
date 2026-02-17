@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTC Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/choise.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/feature.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-section">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-icon">
+                    <img src="assets/Group 235.svg" alt="TOTC Logo">
+                </div>
+            </a>
+
+            <button class="navbar-toggler mobile-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link " href="landing.html">Home</a>
+                    </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Courses
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+    <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+    <li><a class="dropdown-item" href="coursedetail.html">Course Details</a></li>
+    <li><a class="dropdown-item" href="literatureCourse.html">Literature Course</a></li>
+  </ul>
+</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Search</a>
+                    </li>
+                </ul>
+
+                <div class="navbar-profile ms-lg-3">
+                    <div class="dropdown">
+                        <button class="btn profile-dropdown dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/image 12.svg" alt="User" class="profile-img">
+                            <span class="profile-name">Lina</span>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li>
+                                <a class="dropdown-item" href="member.html">
+                                    <i class="fas fa-user"></i>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-book"></i>
+                                    <span>My Courses</span>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item logout" href="login.html">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<section class="search-hero-section">
+    <div class="hero-background">
+        <img src="assets/Rectangle 32.png" alt="Students">
+        <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container">
+        <div class="search-content">
+            <div class="search-bar-wrapper">
+                <input type="text" class="search-input" placeholder="Search your favourite course">
+                <button class="btn-search">Search</button>
+            </div>
+
+            <div class="filters-wrapper">
+                <div class="dropdown">
+                    <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Subject
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                        <li><a class="dropdown-item" href="#">Science</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Partner
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Partner 1</a></li>
+                        <li><a class="dropdown-item" href="#">Partner 2</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Program
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Program 1</a></li>
+                        <li><a class="dropdown-item" href="#">Program 2</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Language
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Abaliability
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Available</a></li>
+                        <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Learning Type
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Online</a></li>
+                        <li><a class="dropdown-item" href="#">Offline</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="course-grid-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 40.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 42.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 4.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 43.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 40.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 42.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 4.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-grid-card">
+                    <div class="course-grid-image">
+                        <img src="assets/Group 43.png" alt="Course">
+                    </div>
+                    <div class="course-grid-content">
+                        <div class="course-grid-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-layer-group"></i>
+                                Design
+                            </span>
+                            <span class="meta-item">
+                                <i class="far fa-clock"></i>
+                                3 Month
+                            </span>
+                        </div>
+                        <h3 class="course-grid-title">AWS Certified solutions Architect</h3>
+                        <p class="course-grid-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-grid-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="our-features-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">
+            Our <span class="text-cyan">Features</span>
+          </h2>
+          <p class="section-subtitle text-muted">
+            This very extraordinary feature, can make learning activities more
+            efficient
+          </p>
+        </div>
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5">
+            <div class="features-content">
+              <h3 class="features-title mb-4">
+                A <span class="text-cyan">user interface</span> designed<br />
+                for the classroom
+              </h3>
+
+              <div class="feature-item d-flex mb-4">
+                <div class="feature-icon">
+                  <div class="icon-box icon-purple"></div>
+                </div>
+                <div class="feature-text">
+                  <p class="mb-0">
+                    Teachers don't get lost in the grid view and have a
+                    dedicated Podium space.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item d-flex mb-4">
+                <div class="feature-icon">
+                  <div class="icon-box icon-orange"></div>
+                </div>
+                <div class="feature-text">
+                  <p class="mb-0">
+                    TA's and presenters can be moved to the front of the class.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item d-flex">
+                <div class="feature-icon">
+                  <div class="icon-box icon-blue"></div>
+                </div>
+                <div class="feature-text">
+                  <p class="mb-0">
+                    Teachers can easily see all students and class data at one
+                    time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="video-interface-wrapper position-relative">
+              <div class="deco-circle deco-green"></div>
+              <div class="deco-circle deco-blue"></div>
+              <div class="deco-circle deco-red"></div>
+
+              <div class="browser-window">
+                <div class="browser-header">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+
+                <div class="video-grid">
+                  <div class="large">
+                    <div class="video-card video-large">
+                      <img
+                        src="assets/Group 57.svg"
+                        alt="Presenter"
+                        class="participant-img"
+                      />
+                    </div>
+                    <div class="control-buttons">
+                      <a href="metting.html" class="btn btn-primary rounded-pill">
+                        <i class="bi bi-camera-video"></i> Present
+                      </a>
+                      <a href="metting.html" class="btn btn-danger rounded-pill">
+                        <i class="bi bi-telephone"></i> Call
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="video-card video-small">
+                    <img
+                      src="assets/Group 63.svg"
+                      alt="Participant"
+                      class="participant-img"
+                    />
+                  </div>
+
+                  <div class="video-card video-small">
+                    <img
+                      src="assets/Group 65.svg"
+                      alt="Participant"
+                      class="participant-img"
+                    />
+                  </div>
+
+                  <div class="video-card video-small">
+                    <img
+                      src="assets/Group 66.svg"
+                      alt="Participant"
+                      class="participant-img"
+                    />
+                  </div>
+
+                  <div class="video-card video-medium">
+                    <img
+                      src="assets/image 8.svg"
+                      alt="Participant"
+                      class="participant-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-choice-section difbg">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Recommended for you</h2>
+            <a href="#" class="see-all-link">See all</a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/Group 4.png" alt="Course">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <div class="category">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="duration">
+                                <i class="far fa-clock"></i>
+                                <span>3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="course-title">AWS Certified solutions Architect</h3>
+                        <p class="course-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/Group 40.png" alt="Course">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <div class="category">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="duration">
+                                <i class="far fa-clock"></i>
+                                <span>3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="course-title">AWS Certified solutions Architect</h3>
+                        <p class="course-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/Group 42.png" alt="Course">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <div class="category">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="duration">
+                                <i class="far fa-clock"></i>
+                                <span>3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="course-title">AWS Certified solutions Architect</h3>
+                        <p class="course-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/Group 43.png" alt="Course">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <div class="category">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="duration">
+                                <i class="far fa-clock"></i>
+                                <span>3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="course-title">AWS Certified solutions Architect</h3>
+                        <p class="course-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                        <div class="course-footer">
+                            <div class="instructor-info">
+                                <img src="assets/image 12.svg" alt="Lina" class="instructor-img">
+                                <span class="instructor-name">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">$100</span>
+                                <span class="new-price">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="creators-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Classes tought by real creators</h2>
+            <a href="#" class="see-all-link">See all</a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="creator-card">
+                    <div class="creator-image-wrapper">
+                        <img src="assets/image 7.svg" alt="Jane Cooper" class="creator-image">
+                        <div class="creator-border"></div>
+                    </div>
+                    <h3 class="creator-name">Jane Cooper</h3>
+                    <p class="creator-description">
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="creator-card">
+                    <div class="creator-image-wrapper">
+                        <img src="assets/image 8.svg" alt="Adam" class="creator-image">
+                        <div class="creator-border"></div>
+                    </div>
+                    <h3 class="creator-name">Adam</h3>
+                    <p class="creator-description">
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="creator-card">
+                    <div class="creator-image-wrapper">
+                        <img src="assets/Group 57.svg" alt="Tomara" class="creator-image">
+                        <div class="creator-border"></div>
+                    </div>
+                    <h3 class="creator-name">Tomara</h3>
+                    <p class="creator-description">
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="creator-card">
+                    <div class="creator-image-wrapper">
+                        <img src="assets/image 7.svg" alt="Jane Cooper" class="creator-image">
+                        <div class="creator-border"></div>
+                    </div>
+                    <h3 class="creator-name">Jane Cooper</h3>
+                    <p class="creator-description">
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="creator-card">
+                    <div class="creator-image-wrapper">
+                        <img src="assets/image 8.svg" alt="Adam" class="creator-image">
+                        <div class="creator-border"></div>
+                    </div>
+                    <h3 class="creator-name">Adam</h3>
+                    <p class="creator-description">
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="creator-card">
+                    <div class="creator-image-wrapper">
+                        <img src="assets/Group 57.svg" alt="Tomara" class="creator-image">
+                        <div class="creator-border"></div>
+                    </div>
+                    <h3 class="creator-name">Tomara</h3>
+                    <p class="creator-description">
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="student-testimonial-section">
+    <div class="container">
+        <h2 class="section-title">What our students have to say</h2>
+
+        <div class="testimonial-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="student-profile-image">
+                        <div class="decorative-shapes">
+                            <div class="shape shape-blue"></div>
+                            <div class="shape shape-yellow"></div>
+                            <div class="shape shape-green"></div>
+                        </div>
+                        <div class="profile-circle">
+                            <img src="assets/Mask Group (2).png"Savannah Nguyen">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="testimonial-content">
+                        <h3 class="student-name">Savannah Nguyen</h3>
+                        <p class="student-email">tanya.hill@example.com</p>
+                        
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-icon twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-thumbnails">
+                <div class="thumbnail-item active">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Student">
+                </div>
+                <div class="thumbnail-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Student">
+                </div>
+                <div class="thumbnail-item">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Student">
+                </div>
+                <div class="thumbnail-item">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Student">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="education-offers-updated-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Top Education offers and deals are listed here</h2>
+            <a href="#" class="see-all-link">See all</a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="offer-card-updated">
+                    <div class="offer-image">
+                        <img src="assets/Group 43.png" alt="Offer">
+                        <div class="offer-overlay"></div>
+                    </div>
+                    <div class="offer-content-updated">
+                        <span class="discount-badge">50%</span>
+                        <h3 class="offer-main-title">Lorem ipsum dolor</h3>
+                        <p class="offer-full-description">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor<br>
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="offer-card-updated">
+                    <div class="offer-image">
+                        <img src="assets/Group 42.png" alt="Offer">
+                        <div class="offer-overlay"></div>
+                    </div>
+                    <div class="offer-content-updated">
+                        <span class="discount-badge green">10%</span>
+                        <h3 class="offer-main-title">Lorem ipsum dolor</h3>
+                        <p class="offer-full-description">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor<br>
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="offer-card-updated">
+                    <div class="offer-image">
+                        <img src="assets/Group 4.png" alt="Offer">
+                        <div class="offer-overlay"></div>
+                    </div>
+                    <div class="offer-content-updated">
+                        <span class="discount-badge">50%</span>
+                        <h3 class="offer-main-title">Lorem ipsum dolor</h3>
+                        <p class="offer-full-description">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor<br>
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+      <div class="container">
+        <div class="footer-top text-center">
+          <div class="footer-logo">
+            <img src="assets/Group 112.svg" alt="" />
+            <div class="logo-text">
+              <span class="virtual">Virtual Class</span>
+              <span class="zoom">for Zoom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="newsletter-section text-center">
+          <p class="newsletter-title">Subscribe to get our Newsletter</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+                required
+              />
+              <button type="submit" class="btn btn-subscribe">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="footer-links text-center">
+          <a href="#" class="footer-link">Careers</a>
+          <span class="separator">|</span>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <span class="separator">|</span>
+          <a href="#" class="footer-link">Terms & Conditions</a>
+        </div>
+
+        <div class="footer-copyright text-center">
+          <p>© 2021 Class Technologies Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
