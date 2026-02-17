@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('currentUser', user.username);
                 
                 alert('Login successful! Welcome ' + user.username);
-                window.location.href = 'index.html';
+                window.location.href = 'landing.html';
             } else {
                 alert('Invalid username or password. Please register first if you don\'t have an account.');
                 usernameInput.style.borderColor = 'red';
