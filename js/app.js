@@ -1,3 +1,38 @@
+      // حماية الصفحة - التحقق من تسجيل الدخول
+      window.addEventListener('DOMContentLoaded', function() {
+        const currentUser = localStorage.getItem('currentUser');
+        const authButtons = document.getElementById('authButtons');
+        const profileSection = document.getElementById('profileSection');
+        const navUsername = document.getElementById('navUsername');
+        
+        // إذا لم يكن هناك مستخدم مسجل دخول، تحويله للـ login
+        if (!currentUser) {
+          alert('Please login first!');
+          window.location.href = 'login.html';
+          return;
+        }
+        
+        // إخفاء أزرار Login/Signup وإظهار الـ Profile
+        authButtons.classList.add('hidden');
+        profileSection.classList.add('active');
+        
+        // عرض اسم المستخدم في الـ dropdown
+        if (navUsername) {
+          navUsername.textContent = currentUser;
+        }
+      });
+      
+      // دالة تسجيل الخروج
+      function logout() {
+        if (confirm('Are you sure you want to logout?')) {
+          localStorage.removeItem('currentUser');
+          alert('Logged out successfully!');
+          window.location.href = 'login.html';
+        }
+      }
+
+
+
 
 let currentStep = 1;
 

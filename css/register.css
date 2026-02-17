@@ -117,7 +117,17 @@ body {
 }
 
 @media (max-width: 768px) {
-  .login-container {
+  .register-container {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-section {
+    height: 220px;
+  }
+
+  .form-section {
+    padding: 20px 10px;
   }
 }
+
